@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AWS SDK Layer
+
+Resources:
+  SDKlayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: python-jwt
+      Description: Python JWT package.
+      ContentUri: './layer'
+      CompatibleRuntimes:
+        - python3.9
+      LicenseInfo: 'Available under the MIT-0 license.'
