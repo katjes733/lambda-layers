@@ -8,7 +8,9 @@ Resources:
     Properties:
       LayerName: python-jwt
       Description: Python JWT package.
-      ContentUri: './layer'
+      ContentUri: './python'
       CompatibleRuntimes:
         - python3.9
       LicenseInfo: 'Available under the MIT-0 license.'
+    Metadata:
+      BuildMethod: makefile
