@@ -11,6 +11,8 @@ Resources:
       ContentUri: './python'
       CompatibleRuntimes:
         - python3.9
+      CompatibleArchitectures:
+        - x86_64
       LicenseInfo: 'Available under the MIT-0 license.'
     Metadata:
       BuildMethod: makefile
